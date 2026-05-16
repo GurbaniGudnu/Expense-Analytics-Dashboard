@@ -1,0 +1,31 @@
+{
+    "totalExpense": 187390.0,
+    "transactionCount": 107,
+    "topCategory": "Travel",
+    "topCategoryAmount": 43200.0,
+    "topCategoryPercent": 23.05,
+    "averageExpense": 2313.46,
+    "highestMonth": "2024-03",
+    "highestMonthExpense": 99490.0,
+    "lowestMonth": "2024-02",
+    "lowestMonthExpense": 42470.0,
+    "categoryTotals": {
+        "Food": 9910.0,
+        "Transport": 1930.0,
+        "Shopping": 32750.0,
+        "Entertainment": 12150.0,
+        "Bills": 23100.0,
+        "Health": 5600.0,
+        "Clothes": 12600.0,
+        "Salon": 7800.0,
+        "Education": 13000.0,
+        "Travel": 43200.0,
+        "Medical": 1350.0,
+        "Rent": 24000.0
+    },
+    "monthlyTotals": {
+        "2024-01": 45430.0,
+        "2024-02": 42470.0,
+        "2024-03": 99490.0
+    }
+}

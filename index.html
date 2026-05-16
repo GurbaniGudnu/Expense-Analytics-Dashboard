@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Expense Analytics Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+
+        <div>
+            <h1>Expense Analytics Dashboard</h1>
+
+            <p class="subtitle">
+                Upload CSV files to generate financial insights and analytics
+            </p>
+        </div>
+
+
+    </div>
+
+    <!-- Upload Section -->
+
+    <div class="card">
+
+        <h3>Upload CSV File</h3>
+
+        <div class="file-row">
+
+            <input type="file" id="csvFile">
+
+            <span class="file-name" id="fileName">
+                No file selected
+            </span>
+
+        </div>
+
+        <div class="button-row">
+
+            <button class="btn primary" onclick="analyzeFile()">
+                Analyze
+            </button>
+
+            <button class="btn secondary" onclick="resetPage()">
+                Reset
+            </button>
+
+
+        </div>
+
+    </div>
+
+    <!-- Results -->
+
+    <div class="hidden" id="resultSection">
+
+        <!-- KPI Cards -->
+
+        <div class="results">
+
+            <div class="result-row">
+                <span>Total Expense</span>
+                <strong id="totalExpense"></strong>
+            </div>
+
+            <div class="result-row">
+                <span>Highest Category</span>
+                <strong id="topCategory"></strong>
+            </div>
+
+            <div class="result-row">
+                <span>Average Daily Expense</span>
+                <strong id="avgExpense"></strong>
+            </div>
+
+            <div class="result-row">
+                <span>Total Transactions</span>
+                <strong id="totalTransactions"></strong>
+            </div>
+
+        </div>
+
+        <!-- Monthly Summary -->
+
+        <div class="card">
+
+            <h3>Monthly Summary</h3>
+
+            <div id="monthlySummary"></div>
+
+        </div>
+
+        <!-- Insights -->
+
+        <div class="card">
+
+            <h3>Insights</h3>
+
+            <ul id="insights"></ul>
+
+        </div>
+
+        <!-- Table -->
+
+        <div class="card">
+
+            <h3>Category Breakdown</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="categoryTable"></tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Charts -->
+
+        <div class="charts">
+
+            <div class="chart-box">
+
+                <h4>Category Distribution</h4>
+
+                <canvas id="pieChart"></canvas>
+
+            </div>
+
+            <div class="chart-box">
+
+                <h4>Expense Comparison</h4>
+
+                <canvas id="barChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
