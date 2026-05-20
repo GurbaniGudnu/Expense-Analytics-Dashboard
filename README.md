@@ -120,8 +120,3 @@ in your browser.
 **Gurbani Gudnu**  
 Aspiring Data Analyst
 
----
-
-## 📄 License
-
-This project is developed for learning and educational purposes.
